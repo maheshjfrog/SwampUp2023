@@ -1,0 +1,5 @@
+[
+  {"key":"jftd105-docker-prod-local","packageType":"docker","rclass":"local","repoLayoutRef":"simple-default","environments":"PROD","xrayIndex":"true"},
+  {"key":"jftd105-maven-prod-local","packageType":"maven","rclass":"local","repoLayoutRef":"maven-2-default","environments":"PROD","xrayIndex":"true"},
+  {"key":"jftd105-npm-prod-local","packageType":"npm","rclass":"local","repoLayoutRef":"npm-default","environments":"PROD","xrayIndex":"true"}
+]
