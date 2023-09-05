@@ -1,4 +1,3 @@
-jf c use swampup
 
 sh create_local_repos.sh
 sh create_remote_repos.sh
