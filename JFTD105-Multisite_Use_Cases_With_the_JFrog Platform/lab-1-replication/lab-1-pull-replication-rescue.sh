@@ -1,0 +1,21 @@
+
+if [[ $# -eq 0 ]] ; then
+    echo 'Pass the student number, for example 00 or 32.'
+    exit 1
+fi
+# create the repo in soleng
+for row in $(cat ./repos-for-pull.json | jq -r '.[] | @base64'); do
+    _jq() {
+      echo ${row} | base64 --decode | jq -r ${1}
+    }
+    # set the source server to swampup
+      jf c use swampup
+      jf rt repo-create template-pull-rescue.json --vars "repo-name=$1-$(_jq '.sourcekey');package-type=$(_jq '.packageType');repo-type=$(_jq '.sourcerclass');repo-layout=$(_jq '.repoLayoutRef');project-key=$(_jq '.projectKey');env=$(_jq '.environments');xray-enable=$(_jq '.xrayIndex')"
+
+    #set the target server to soleng
+    jf c use soleng
+    jf rt repo-create template-pull-rescue.json --vars "repo-name=$1-$(_jq '.targetkey');source-repo-name=$1-$(_jq '.sourcekey');package-type=$(_jq '.packageType');repo-type=$(_jq '.targetrclass');repo-layout=$(_jq '.repoLayoutRef');project-key=$(_jq '.projectKey');env=$(_jq '.environments');xray-enable=$(_jq '.xrayIndex')"
+    # set the replication configuration
+    jf rt replication-create template-pull-configuration.json --vars "source-repo-name=$1-$(_jq '.sourcekey');target-repo-name=$1-$(_jq '.targetkey')"
+done
+

@@ -1,0 +1,11 @@
+{
+  "url":"https://soleng.jfrog.io/artifactory/${source-repo-name}",
+  "username":"admin",
+  "password":"JFr0g0601",
+  "key": "${repo-name}",
+  "packageType": "${package-type}",
+  "rclass": "${repo-type}",
+  "repoLayoutRef": "${repo-layout}",
+  "environments":"${env}",
+  "xrayIndex": "${xray-enable}"
+}
