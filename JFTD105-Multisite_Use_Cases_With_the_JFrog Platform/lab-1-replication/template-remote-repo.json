@@ -1,8 +1,8 @@
 {
-    "key":"jftd105lab1usr01-maven-remote",
+    "key":"jftd105lab1-maven-remote",
     "packageType":"maven",
     "rclass":"remote",
-    "url":"https://soleng.jfrog.io/artifactory/jftd105lab1usr01-mvn-dev-local",
+    "url":"https://soleng.jfrog.io/artifactory/jftd105lab1-mvn-dev-local",
     "username":"admin",
     "password":"JFr0g0601",
     "repoLayoutRef":"maven-2-default",

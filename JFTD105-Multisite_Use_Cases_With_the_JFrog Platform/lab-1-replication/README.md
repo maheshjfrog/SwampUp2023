@@ -16,8 +16,8 @@
   ``jf rt rplt template-push.json``
 
   - Select replication job type (press Tab for options): `push`
-  - Enter source repo key > `<YY>-jftd105-maven-dev-local`         YY: student number, for example 00 or 32.
-    - Enter target repo key > `<YY>-jftd105-maven-dev-local`       YY: student number, for example 00 or 32.
+  - Enter source repo key > `jftd105-maven-dev-local`         
+    - Enter target repo key > `jftd105-maven-dev-local`       
   - Enter cron expression for frequency (for example, 0 0 12 * * ? will replicate daily) > `*/10 * * * * ?`
   - You can type ":x" at any time to save and exit.
   - Select the next property > `enabled`
@@ -40,9 +40,9 @@
         "cronExp": "*/10 * * * * ?",
         "enableEventReplication": "true",
         "enabled": "true",
-        "repoKey": "<YY>-jftd105-maven-dev-local",
+        "repoKey": "jftd105-maven-dev-local",
 -       "serverId":"swampupedge",
--       "targetRepoKey":"<YY>-jftd105-maven-dev-local"
+-       "targetRepoKey":"jftd105-maven-dev-local"
         "syncDeletes": "true",
         "syncProperties": "true",
         "syncStatistics": "true"
@@ -64,7 +64,7 @@
   ``jf rt rplt template-pull.json``
 
   - Select replication job type (press Tab for options): `pull`
-  - Enter source repo key > `<YY>-jftd105-maven-remote`          # Smart Repository (Remote repository pointing other repository from other Artifactory instance)
+  - Enter source repo key > `jftd105-maven-remote`          # Smart Repository (Remote repository pointing other repository from other Artifactory instance)
   - Enter cron expression for frequency (for example, 0 0 12 * * ? will replicate daily) > `*/10 * * * * ?`
   - You can type ":x" at any time to save and exit.
   - Select the next property > `enabled`
@@ -87,7 +87,7 @@
         "cronExp": "*/10 * * * * ?",
         "enableEventReplication": "true",
         "enabled": "true",
-        "repoKey": "<YY>-jftd105-maven-remote",
+        "repoKey": "jftd105-maven-remote",
         "syncDeletes": "true",
         "syncProperties": "true",
         "syncStatistics": "true"

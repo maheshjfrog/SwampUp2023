@@ -10,8 +10,8 @@
     "name" : "/",
     "version" : "3.9.4"
   },
-  "started" : "2023-09-04T21:10:19.969-0500",
-  "durationMillis" : 1682,
+  "started" : "2023-09-06T07:10:54.288-0500",
+  "durationMillis" : 3271,
   "vcs" : [ ],
   "modules" : [ {
     "properties" : {
@@ -25,9 +25,9 @@
     "repository" : "payment-maven-dev-virtual",
     "artifacts" : [ {
       "type" : "jar",
-      "sha1" : "9d1310c0992b3cbc80dca5fe9e50f6fb67dc5d24",
-      "sha256" : "997579621a20eab7ff6bcfed56b58112e2694b6e1d4287c4cc2231c0978a6326",
-      "md5" : "9fb3c30f03cd28b020e37eba4c5bf2f4",
+      "sha1" : "38b88bd5dd6a03d0c1bbedc7559465efd7fd3890",
+      "sha256" : "811b0d1f5839b67502122b8fd5d47fac3c21c42473de2b35534706937d52f59d",
+      "md5" : "cc9b31ac59c82a75e08cb4de2521fe37",
       "name" : "multi2-3.7-SNAPSHOT.jar",
       "path" : "org/jfrog/test/multi2/3.7-SNAPSHOT/multi2-3.7-SNAPSHOT.jar"
     }, {
@@ -154,23 +154,23 @@
     "repository" : "payment-maven-dev-virtual",
     "artifacts" : [ {
       "type" : "test-jar",
-      "sha1" : "e910489cd4c41037f8254e38def8839ade461c0f",
-      "sha256" : "6db52859dd1d049749394aedf00a2444c631a63168ab1b6baf6ea40bd5f1e13c",
-      "md5" : "c6007ad1cbeb36ce95033928027d5d0f",
+      "sha1" : "46a9716a9fc3c786c5a935d2d368f1bb579cb630",
+      "sha256" : "6b4ab9e1b70639d2c71eff33f86132ca7cef72ca50f582a12fd529090dfb377f",
+      "md5" : "5e6d7efdbb54b46f12ec8a04b5db7098",
       "name" : "multi1-3.7-SNAPSHOT-tests.jar",
       "path" : "org/jfrog/test/multi1/3.7-SNAPSHOT/multi1-3.7-SNAPSHOT-tests.jar"
     }, {
       "type" : "java-source-jar",
-      "sha1" : "5d3958d462cb154175de07b80541367bd0d38410",
-      "sha256" : "94aba14009256b91f586a0493eefc87bbb07663cd3d971b8831d6666b81a491e",
-      "md5" : "ab837bb31bf64980971ce4a2a27baade",
+      "sha1" : "da9fdcbfdc7b1150cd9712e37eaf5ffebe417ac2",
+      "sha256" : "8813bac06921eedc8f27fd02f067b5aa3aac996666347c616dc072ab5269c5af",
+      "md5" : "0771f82cde62fae3f3871a7a456f4dbe",
       "name" : "multi1-3.7-SNAPSHOT-sources.jar",
       "path" : "org/jfrog/test/multi1/3.7-SNAPSHOT/multi1-3.7-SNAPSHOT-sources.jar"
     }, {
       "type" : "jar",
-      "sha1" : "476aebfe29c675431b59aa0e1dd48caa577ad048",
-      "sha256" : "51e5cbe1ee8297af6f5543717f69531dd98208d3f7f8a472dcff9cab19fcfe11",
-      "md5" : "01a4e2c911650774632913bff86ebf84",
+      "sha1" : "24d53ed4a4dd3f5d2941935f62df335ec6c28b19",
+      "sha256" : "dc330bcc12145b9286510d7f06554e288c6c0b307affd00afaaab07c5d9a4b6f",
+      "md5" : "525a34a4188d2d9cc5d4dc3e10a3543b",
       "name" : "multi1-3.7-SNAPSHOT.jar",
       "path" : "org/jfrog/test/multi1/3.7-SNAPSHOT/multi1-3.7-SNAPSHOT.jar"
     }, {

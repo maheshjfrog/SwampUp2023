@@ -44,7 +44,7 @@
 - ``jf config add swampup2ndjpd --artifactory-url=https://$JFROG_SECOND_PLATFORM/artifactory --user=$ADMIN_USER --password=$ADMIN_PASSWORD --interactive=false``
 
 ## RUN SCRIPT - Prerequisites for future labs that CREATES REPOSITORIES
-- Run `sh script-provision-repos.sh <YY>` YY: student number, for example 00 or 32.
+- Run `sh script-provision-repos.sh` 
   It will create all repositories starting with student number.
 
 <br />

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="artifactory.test.AppTest" time="0.015" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="artifactory.test.AppTest" time="0.014" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="19"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -12,7 +12,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="/Users/ananthak/Library/Java/JavaVirtualMachines/openjdk-19.0.2/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/ananthak/IdeaProjects/SwampUp2023/JFTD105-Multisite_Use_Cases_With_the_JFrog Platform/lab-4-distribution/example/maven-example/multi1/target/surefire/surefirebooter-20230904211020623_3.jar /Users/ananthak/IdeaProjects/SwampUp2023/JFTD105-Multisite_Use_Cases_With_the_JFrog Platform/lab-4-distribution/example/maven-example/multi1/target/surefire 2023-09-04T21-10-20_580-jvmRun1 surefire-20230904211020623_1tmp surefire_0-20230904211020623_2tmp"/>
+    <property name="sun.java.command" value="/Users/ananthak/IdeaProjects/SwampUp2023/JFTD105-Multisite_Use_Cases_With_the_JFrog Platform/lab-4-distribution/example/maven-example/multi1/target/surefire/surefirebooter-20230906071054976_3.jar /Users/ananthak/IdeaProjects/SwampUp2023/JFTD105-Multisite_Use_Cases_With_the_JFrog Platform/lab-4-distribution/example/maven-example/multi1/target/surefire 2023-09-06T07-10-54_925-jvmRun1 surefire-20230906071054976_1tmp surefire_0-20230906071054976_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/ananthak/IdeaProjects/SwampUp2023/JFTD105-Multisite_Use_Cases_With_the_JFrog Platform/lab-4-distribution/example/maven-example/multi1/target/test-classes:/Users/ananthak/IdeaProjects/SwampUp2023/JFTD105-Multisite_Use_Cases_With_the_JFrog Platform/lab-4-distribution/example/maven-example/multi1/target/classes:/Users/ananthak/.m2/repository/org/apache/commons/commons-email/1.5/commons-email-1.5.jar:/Users/ananthak/.m2/repository/com/sun/mail/javax.mail/1.5.6/javax.mail-1.5.6.jar:/Users/ananthak/.m2/repository/javax/activation/activation/1.1/activation-1.1.jar:/Users/ananthak/.m2/repository/org/codehaus/plexus/plexus-utils/3.4.1/plexus-utils-3.4.1.jar:/Users/ananthak/.m2/repository/javax/servlet/jsp/jsp-api/2.2/jsp-api-2.2.jar:/Users/ananthak/.m2/repository/commons-io/commons-io/20030203.000550/commons-io-20030203.000550.jar:/Users/ananthak/.m2/repository/org/springframework/spring-aop/5.3.13/spring-aop-5.3.13.jar:/Users/ananthak/.m2/repository/org/springframework/spring-beans/5.3.13/spring-beans-5.3.13.jar:/Users/ananthak/.m2/repository/org/springframework/spring-core/5.3.13/spring-core-5.3.13.jar:/Users/ananthak/.m2/repository/org/springframework/spring-jcl/5.3.13/spring-jcl-5.3.13.jar:/Users/ananthak/.m2/repository/org/mockito/mockito-core/4.1.0/mockito-core-4.1.0.jar:/Users/ananthak/.m2/repository/net/bytebuddy/byte-buddy/1.12.1/byte-buddy-1.12.1.jar:/Users/ananthak/.m2/repository/net/bytebuddy/byte-buddy-agent/1.12.1/byte-buddy-agent-1.12.1.jar:/Users/ananthak/.m2/repository/org/objenesis/objenesis/3.2/objenesis-3.2.jar:/Users/ananthak/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/Users/ananthak/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -28,7 +28,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="apple.awt.application.name" value="ForkedBooter"/>
-    <property name="surefire.real.class.path" value="/Users/ananthak/IdeaProjects/SwampUp2023/JFTD105-Multisite_Use_Cases_With_the_JFrog Platform/lab-4-distribution/example/maven-example/multi1/target/surefire/surefirebooter-20230904211020623_3.jar"/>
+    <property name="surefire.real.class.path" value="/Users/ananthak/IdeaProjects/SwampUp2023/JFTD105-Multisite_Use_Cases_With_the_JFrog Platform/lab-4-distribution/example/maven-example/multi1/target/surefire/surefirebooter-20230906071054976_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="19.0.2+7-44"/>
     <property name="user.name" value="ananthak"/>
