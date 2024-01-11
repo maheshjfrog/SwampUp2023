@@ -8,3 +8,4 @@
         - workingDirs:
             - JFTD104-Intro_to_DevSecOps_with_JFrog_Xray/lab-3/project-examples/maven-vulnerable-example
             - JFTD104-Intro_to_DevSecOps_with_JFrog_Xray/lab-3/project-examples/npm-vulnerable-example
+            - JFTD103-JFrog_Platform_Automation/lab-5-JFrog-Security/example/npm-example
