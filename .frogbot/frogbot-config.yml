@@ -1,0 +1,10 @@
+- params:
+    git:
+      repoName: SwampUp2023
+      branches:
+        - main
+    scan:
+      projects:
+        - workingDirs:
+            - JFTD104-Intro_to_DevSecOps_with_JFrog_Xray/lab-3/project-examples/maven-vulnerable-example
+            - JFTD104-Intro_to_DevSecOps_with_JFrog_Xray/lab-3/project-examples/npm-vulnerable-example
