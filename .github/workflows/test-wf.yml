@@ -30,4 +30,4 @@ jobs:
    - name: Build publish and scan
      run: |
        jf rt build-publish my-build 1.0.1
-       jf bs my-build 1.0.1 --vuln --fail=false
+       jf bs my-build 1.0.1
