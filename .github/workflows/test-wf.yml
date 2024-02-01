@@ -20,7 +20,6 @@ jobs:
    - name: Check Artifactory
      run: |
        echo "HI"
-       curl http://44.230.142.66:8082/artifactory/api/system/ping
        jf c s
        
    # This action creates a new test file and uploads it to Artifactory   
