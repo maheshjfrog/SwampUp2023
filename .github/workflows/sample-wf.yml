@@ -21,6 +21,8 @@ jobs:
 
    # This command adds a new server configuration to the JFrog CLI   
    - run: |
+       echo "JF_URL: $JF_URL"
+       jf c s
        jf rt ping
 
 
