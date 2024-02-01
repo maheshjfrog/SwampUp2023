@@ -21,10 +21,6 @@ jobs:
 
    # This command adds a new server configuration to the JFrog CLI   
    - run: |
-       export SERVER_ID="test"
-       echo "Adding jf config for URL: $URL"
-       jf c add $SERVER_ID --url=$URL --access-token=$ACCESS_TOKEN --interactive=false
-       jf c s
        jf rt ping
 
 
