@@ -1,0 +1,45 @@
+name: Push Build to Artifactory
+
+on: [push]
+
+jobs:
+ build:
+   runs-on: ubuntu-latest
+  
+   steps:
+   # This action checks out the code from the repository
+   - name: Checkout Code
+     uses: actions/checkout@v2
+
+
+   # This action sets up the JFrog CLI with the Artifactory URL and access token     
+   - uses: jfrog/setup-jfrog-cli@v3
+     env:
+       URL: ${{ secrets.ARTIFACTORY_URL }}
+       ACCESS_TOKEN: ${{ secrets.ARTIFACTORY_ACCESS_TOKEN }}
+
+
+   # This command adds a new server configuration to the JFrog CLI   
+   - run: |
+       export SERVER_ID="test"
+       jf c add $SERVER_ID --url=$URL --access-token=$ACCESS_TOKEN --interactive=false
+
+
+   # This action creates a new test file and uploads it to Artifactory   
+   - name: Push Build to Artifactory
+     run: |
+       echo "test file " > test.txt
+       export BUILD_NAME="my-build"
+       export BUILD_MODULE="my-module"
+       export BUILD_NUMBER="1"
+
+       export PATH_TO_DIRECTORY="name/version/dates"
+      
+       jf rt upload "test.txt" generic-local/$PATH_TO_DIRECTORY --build-name $BUILD_NAME --build-number $BUILD_NUMBER --module $BUILD_MODULE
+
+   # This action publishes the build information to Artifactory and deletes older builds
+   - name: Build to Artifactory
+     run: |
+       jf rt build-publish $BUILD_NAME $BUILD_NUMBER
+     
+       jf rt bdi c --max-builds=1
