@@ -21,13 +21,13 @@ jobs:
      run: |
        cd JFTD104-Intro_to_DevSecOps_with_JFrog_Xray/lab-3/project-examples/npm-vulnerable-example
        jf npmc --repo-resolve my-npm-virtual --repo-deploy my-npm-virtual 
-       jf npm install --build-name my-build --build-number 1.0.0
-       jf npm publish --build-name my-build --build-number 1.0.0
-       jf rt build-collect-env my-build 1.0.0
-       jf rt build-add-git my-build 1.0.0
+       jf npm install --build-name my-build --build-number 1.0.1
+       jf npm publish --build-name my-build --build-number 1.0.1
+       jf rt build-collect-env my-build 1.0.1
+       jf rt build-add-git my-build 1.0.1
 
    # This action publishes the build information to Artifactory and scans the build.
    - name: Build publish and scan
      run: |
-       jf rt build-publish my-build 1.0.0
-       jf bs my-build 1.0.0       
+       jf rt build-publish my-build 1.0.1
+       jf bs my-build 1.0.1
