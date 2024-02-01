@@ -1,0 +1,32 @@
+name: Test Maven build flow
+on: [workflow_dispatch]
+jobs:
+ build:
+   runs-on: ubuntu-latest
+  
+   steps:
+   # This action checks out the code from the repository
+   - name: Checkout Code
+     uses: actions/checkout@v2
+
+
+   # This action sets up the JFrog CLI with the Artifactory URL and access token     
+   - uses: jfrog/setup-jfrog-cli@v3
+     env:
+       JF_URL: ${{ secrets.ARTIFACTORY_URL }}
+       JF_ACCESS_TOKEN: ${{ secrets.ARTIFACTORY_ACCESS_TOKEN }}
+
+   # This action performs the build
+   - name: Build mvn and push to Artifactory
+     run: |
+       cd JFTD104-Intro_to_DevSecOps_with_JFrog_Xray/lab-3/project-examples/maven-vulnerable-example
+       jf mvnc --repo-resolve-snapshots my-libs-snapshot-virtual --repo-resolve-releases my-libs-release-virtual --repo-deploy-snapshots my-libs-snapshot-virtual --repo-deploy-releases my-libs-release-virtual
+       jf mvn clean install -f ./pom.xml -Dmaven.test.skip=true -Dartifactory.publish.artifacts=true --build-name my_mvn_wf --build-number 1.0.0
+       jf rt build-collect-env my_mvn_wf 1.0.0
+       jf rt build-add-git my_mvn_wf 1.0.0
+
+   # This action publishes the build information to Artifactory and scans the build.
+   - name: Build publish and scan
+     run: |
+       jf rt bp my_mvn_wf 1.0.0
+       jf bs my_mvn_wf 1.0.0
