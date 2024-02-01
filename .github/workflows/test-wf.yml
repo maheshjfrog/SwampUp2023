@@ -21,19 +21,4 @@ jobs:
      run: |
        echo "HI"
        jf c s
-       
-   # This action creates a new test file and uploads it to Artifactory   
-   - name: Push Build to Artifactory
-     run: |
-       echo "test file " > test.txt
-       export BUILD_NAME="my-build"
-       export BUILD_MODULE="my-module"
-       export BUILD_NUMBER="1"
-       export PATH_TO_DIRECTORY="name/version/dates"
-       jf rt upload "test.txt" generic-local/$PATH_TO_DIRECTORY --build-name $BUILD_NAME --build-number $BUILD_NUMBER --module $BUILD_MODULE
-
-   # This action publishes the build information to Artifactory and deletes older builds
-   - name: Build to Artifactory
-     run: |
-       jf rt build-publish $BUILD_NAME $BUILD_NUMBER
-       jf rt bdi c --max-builds=1
+       jf rt ping
