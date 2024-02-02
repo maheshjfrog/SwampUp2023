@@ -29,4 +29,4 @@ jobs:
    - name: Build publish and scan
      run: |
        jf rt bp my_mvn_wf 1.0.0
-       jf bs my_mvn_wf 1.0.0 --fail=false --vuln
+       jf bs my_mvn_wf 1.0.0 --vuln
